@@ -1,3 +1,12 @@
+// The most dangerous part of this code is, the maximum
+// value of k might be up to 10^10000000000, which NO
+// datatypes would be able to handle that number.
+//
+// We've learned that if k could be divided by 9, the sum
+// of all digits in k would be divisible by 9 too. With
+// this information, our code completely accepts large
+// amount of number.
+
 using System;
 class MathContest{
 	public static bool divisibleByNine(string num){
