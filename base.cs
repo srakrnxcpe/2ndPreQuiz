@@ -3,7 +3,7 @@ class Base{
 	public static string baseConvert(string num, int oBase, int dBase){
 		int length = num.Length-1;
 		int dec = 0;
-		string numberSystem = "0123456789ABCEF";
+		string numberSystem = "0123456789ABCDEF";
 		num = num.ToUpper();
 		for(int i=0;i<num.Length;i++){
 			dec += (int)((int)char.GetNumericValue(num[i])*Math.Pow(oBase,length));
