@@ -6,7 +6,7 @@ class Base{
 		string numberSystem = "0123456789ABCDEF";
 		num = num.ToUpper();
 		for(int i=0;i<num.Length;i++){
-			dec += (int)((int)char.GetNumericValue(num[i])*Math.Pow(oBase,length));
+			dec += (int)(numberSystem.IndexOf(num[i])*Math.Pow(oBase,length));
 			length--;
 		}
 		string converted = "";
