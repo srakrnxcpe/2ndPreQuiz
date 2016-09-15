@@ -5,8 +5,8 @@ class Base{
 		int dec = 0;
 		string numberSystem = "0123456789ABCEF";
 		num = num.ToUpper();
-		foreach(char c in num){
-			dec += (int)((int)char.GetNumericValue(c)*Math.Pow(oBase,length));
+		for(int i=0;i<num.Length;i++){
+			dec += (int)((int)char.GetNumericValue(num[i])*Math.Pow(oBase,length));
 			length--;
 		}
 		string converted = "";
